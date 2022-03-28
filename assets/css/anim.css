@@ -1,0 +1,104 @@
+
+
+.word {
+  /* border: 1px solid #26e; */
+  display: flex;
+
+
+  width: fit-content;
+
+  overflow: hidden;
+}
+
+
+.let {
+  /* border: 1px solid #e51; */
+  /* background: #f87; */
+  margin: 0;
+  color: var(--c-light);
+
+  /* TODO -- réactiver animation */
+  transform: translateY(-100%);
+  animation: letterDrop .3s ease-in-out forwards;
+}
+
+
+
+@keyframes letterDrop {
+  0% {
+    transform: translateY(100%);
+    color: var(--c-oppo);
+  }
+  50% {
+    color: var(--c-hero);
+  }
+  100% {
+    transform: translateY(0%);
+    color: var(--c-dark);
+  }
+} 
+
+
+
+
+:root {
+  --del: .04s;
+}
+
+.let:nth-child(1) {
+  animation-delay: calc(1 * var(--del));
+}
+
+.let:nth-child(2) {
+  animation-delay: calc(2 * var(--del));
+}
+
+.let:nth-child(3) {
+  animation-delay: calc(3 * var(--del));
+}
+
+.let:nth-child(4) {
+  animation-delay: calc(4 * var(--del));
+}
+
+.let:nth-child(5) {
+  animation-delay: calc(5 * var(--del));
+}
+
+.let:nth-child(6) {
+  animation-delay: calc(6 * var(--del));
+}
+
+.let:nth-child(7) {
+  animation-delay: calc(7 * var(--del));
+}
+
+.let:nth-child(8) {
+  animation-delay: calc(8 * var(--del));
+}
+
+.let:nth-child(9) {
+  animation-delay: calc(9 * var(--del));
+}
+
+.let:nth-child(10) {
+  animation-delay: calc(10 * var(--del));
+}
+
+.let:nth-child(11) {
+  animation-delay: calc(11 * var(--del));
+}
+
+.let:nth-child(12) {
+  animation-delay: calc(12 * var(--del));
+}
+
+.let:nth-child(13) {
+  animation-delay: calc(13 * var(--del));
+}
+
+.let:nth-child(14) {
+  animation-delay: calc(14 * var(--del));
+}
+
+

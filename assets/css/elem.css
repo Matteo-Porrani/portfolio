@@ -14,6 +14,14 @@ header {
   background-position: 0px -60px;
 
   padding: 2rem 0;
+
+
+  transition: .6s ease-in-out;
+}
+
+
+header.starting {
+  background-size: 0% 100%;
 }
 
 
@@ -29,7 +37,7 @@ header {
   /* background-color: antiquewhite; */
 
   padding: 1rem 0 3rem;
-
+  transition: .3s ease-in-out;
 }
 
 
@@ -37,7 +45,9 @@ header {
   /* background: gold; */
   position: relative;
   /* min-height: 1000px; */
-  padding-bottom: 6rem;
+  padding-bottom: 280px;
+
+  transition: .3s ease-in-out;
 }
 
 
@@ -53,7 +63,7 @@ header {
 
   transform: translateX(100vw);
 
-  transition: .4s ease-out;
+  transition: .4s ease-in-out;
 
   z-index: 9999;
 
@@ -123,6 +133,14 @@ footer {
 
 #laptop {
   width: 60%;
+
+  transition: .6s ease-in-out;
+
+}
+
+#laptop.starting {
+  transform: scale(.9);
+  opacity: 0;
 }
 
 
@@ -141,6 +159,8 @@ footer {
 
   .dev__parag {
     font-size: 1.375rem;
+
+    transition: .6s ease-in-out;
   }
 
 
@@ -201,11 +221,13 @@ footer {
   justify-content: center;
   align-items: center;
 
-  font-size: 1.375rem;
+  font-family: inherit;
+  font-size: 1.25rem;
   font-weight: 800;
 
-  width: 120px;
-  height: 120px;
+  width: 50%;
+
+  padding: 1rem 0;
 
 }
 
@@ -232,6 +254,12 @@ footer {
 
 
 /* (+) #works */
+
+
+.project {
+  transition: .4s ease-out;
+}
+
 
 .project__header {
   /* background-color: orange; */
@@ -356,14 +384,17 @@ footer {
 
 .input--toggle:checked + .project__body {
   /* display: block; */
-  max-height: 1200px;
+  max-height: 1500px;
   
 }
 
 
+/* TODO -- PROJECT BODY WRAPPER ++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .project__body__wrapper {
   padding: 2rem 1rem;
+
+  transition: .4s ease-out;
 }
 
 @media (min-width: 820px) {
@@ -377,6 +408,13 @@ footer {
     padding: 3rem 2rem;
   }
 }
+
+
+
+
+
+
+
 
 
 .project__details { /* left side */
@@ -406,7 +444,8 @@ footer {
 
 
 .project__details__parag {
-  line-height: 2;
+  line-height: 1.8;
+  font-size: 14px;
 }
 
 
@@ -423,6 +462,12 @@ footer {
     gap: 5rem;
     margin: 0;
   }
+
+  .project__details__parag {
+    line-height: 2;
+    font-size: 1rem;
+  }
+  
 
   .project__visuals {
     margin: 0;
@@ -442,7 +487,9 @@ footer {
   /* background-color: pink; */
   width: 100%;
 
-  margin: 0 auto;
+  font-size: 14px;
+
+  margin: 0 auto 1.5rem;
 }
 
 
@@ -451,10 +498,18 @@ footer {
 }
 
 
+.icon__divider {
+  margin: 0 0 .5rem;
+}
+
+
+
 @media (min-width: 820px) {
   .about__text {
-    /* font-size: 1.125rem; */
-    width: 80%;
+
+    font-size: 1rem;
+    width: 75%;
+
   }  
 
 }

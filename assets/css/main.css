@@ -8,7 +8,7 @@
   --c-hero: #21D9C6;
   --c-hero-dimm: hsla(174, 74%, 49%, .2);
   --c-oppo: #FBE44B;
-  --c-oppo-dimm: hsla(52, 96%, 64%, .8);
+  --c-oppo-dimm: hsla(52, 96%, 64%, .7);
 
 }
 
@@ -20,7 +20,9 @@
   box-sizing: border-box;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
 
@@ -37,12 +39,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
-
-  overflow-x: hidden;
-
   padding: 0;
   margin: 0;
 
+}
+
+.body__wrapper {
+  overflow-x: hidden;
 }
 
 
@@ -78,7 +81,7 @@ h1 {
 
 
 h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(1.125rem + 0.9vw);
 }
 
 @media (min-width: 820px) {
@@ -163,6 +166,12 @@ h2 {
   opacity: 1;
 }
 
+
+
+
+.tr-y {
+  transform: translateY(36px);
+}
 
 
 
