@@ -1,0 +1,202 @@
+:root {
+  --c-dark: #231F20;
+  --c-dark-dimm: hsla(345, 6%, 13%, .7);
+  --c-mid: #7d7a7b;
+  --c-soft: #e8e8e8;
+  --c-light: #f9f9f9;
+
+  --c-hero: #21D9C6;
+  --c-hero-dimm: hsla(174, 74%, 49%, .2);
+  --c-oppo: #FBE44B;
+  --c-oppo-dimm: hsla(52, 96%, 64%, .8);
+
+}
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+body {
+
+  background-color: var(--c-light);
+  color: var(--c-dark);
+
+  font-family: "Montserrat", sans-serif;
+
+  line-height: 1.6;
+
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  overflow-x: hidden;
+
+  padding: 0;
+  margin: 0;
+
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* RESET */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+@media (min-width: 820px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+
+h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 820px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* UTILITY CLASSES */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.container {
+  /* border: 2px solid chartreuse; */
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 820px) {
+  .container {
+    max-width: 75%;
+  }  
+}
+
+.btn {
+  /* border: 1px solid #000; */
+  border-radius: 6px;
+
+  display: block;
+  width: fit-content;
+
+
+  padding: .75rem 1.5rem;
+}
+
+
+.btn--link {
+  background-color: var(--c-oppo);
+  font-size: 1.125rem;
+}
+
+.btn--link:hover {
+  background-color: var(--c-oppo-dimm);
+}
+
+
+
+.btn--dark {
+  background-color: var(--c-dark);
+  color: var(--c-oppo);
+  font-size: 1.125rem;
+}
+
+.btn--dark:hover {
+  background-color: var(--c-dark-dimm);
+}
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* MORE UTILITY CLASSES */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.bdr {
+  border: 2px solid red;
+}
+
+.bgr {
+  background-color: red;
+}
+
+
+.dnn {
+  display: none;
+}
+
+.op-0 {
+  opacity: 0;
+}
+
+.op-1 {
+  opacity: 1;
+}
+
+
+
+
+.fsz-2 {
+  font-size: 2rem;
+}
+
+
+
+.al-center {
+  text-align: center;
+}
+
+.al-start {
+  text-align: start;
+}
+
+.al-end {
+  text-align: end;
+}
+
+
+
+
+bg-hero {
+  background-color: var(--c-hero);
+}
+
+bg-mid {
+  background-color: var(--c-mid);
+}
+
+bg-oppo {
+  background-color: var(--c-oppo);
+}
+
+
