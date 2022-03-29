@@ -213,7 +213,8 @@ footer {
 
   cursor: pointer;
 
-  color: var(--c-mid);
+  /* color: var(--c-mid); */
+  color: var(--c-mid-dimm);
 
   display: flex;
   gap: 1rem;
@@ -236,8 +237,12 @@ footer {
 }
 
 
+
+/* TODO -- background color ou simple border ??? */
 .menu__item.active {
-  background: var(--c-hero);
+  border: 3px solid var(--c-hero);
+
+  /* background: var(--c-hero); */
   color: var(--c-dark);
 }
 
@@ -479,6 +484,11 @@ footer {
   }
 }
 
+
+
+.about__icon {
+  font-size: 1.75rem;
+}
 
 
 .about__text {
