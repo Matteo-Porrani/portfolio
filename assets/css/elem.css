@@ -52,7 +52,7 @@ header.starting {
 
 
 #about {
-  background-color: #fd3;
+  background-color: var(--c-oppo);
 
   position: absolute;
   top: 0;
